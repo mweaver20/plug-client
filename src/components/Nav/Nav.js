@@ -7,16 +7,16 @@ const Nav = () => {
         <nav className='nav-bar'>
             <ul>
                 <li>
-                    <NavLink className="link" to="/">page1</NavLink>
+                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/free">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className="link" to="/">page2</NavLink>
+                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/page2">page2</NavLink>
                 </li>
                 <li>
-                    <NavLink className="link" to="/">page3</NavLink>
+                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/page3">page3</NavLink>
                 </li>
                 <li>
-                    <NavLink className="link" to="/">page4</NavLink>
+                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/page4">page4</NavLink>
                 </li>
             </ul>
         </nav>

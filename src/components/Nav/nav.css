@@ -1,11 +1,10 @@
 
 .nav-bar{
         max-width:300px;
-        background:rgba(0, 0, 0, 0.75);
+        background-color: #37393A;
         margin:10px 0 0 10px;
-        border-radius: 2%;
+        border-radius: 10px;
         padding:15px 0px 20px 0px;
-        border: .5px solid black;
         width: 250px;
         box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
         height: 100vh;
@@ -16,32 +15,43 @@ ul {
     padding: 0;
     margin: 50px 0px 0px 20px;
     width: 100%;
-    align-items: center
-
     
 }
 
 li {
-    padding: 40px 30px 0 0px;
+    padding: 40px 20px 0 0px;
     margin: none;
-    border-top: .5px solid white;
-    border-bottom: .5px solid white;
-    align-content: center;
-    
 }
-.link {
+
+.activeNavLink {
     text-decoration: none;
     font-family: 'Roboto';
-    font-size:16px;
-   font-weight:300;
-   text-align:center;
-   position:relative;
-   height:40px;
-   line-height:40px;
-   margin-top:10px;
-   overflow:hidden;
-   width:90%;
-   margin-left:5%;
-   cursor:pointer;
-   color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    cursor: pointer;
+    color: white;
+    border-bottom: 1px solid white;
 }
+.inactiveNavLink {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    cursor: pointer;
+    color: white;
+}
+
