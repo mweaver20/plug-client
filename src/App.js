@@ -6,11 +6,13 @@ import './App.css';
 
 import Root from "./components/Root/Root";
 import Home from "./pages/Home/Home";
+import HourPage from "./pages/HourPage/HourPage";
 
 const router = createBrowserRouter( createRoutesFromElements(
   /* Wrap this Root Route to create Router here */
-  <Route path="/free" element={ <Root/> }> 
+  <Route path="/" element={ <Root/> }> 
     <Route index element={<Home/>} />
+    <Route path="HourPage" element={<HourPage />} />
   </Route>
 ))
 
