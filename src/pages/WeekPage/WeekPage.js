@@ -1,22 +1,27 @@
 import React, {useEffect, useState} from "react";
-import LineChart from "../../components/Charts/LineChart";
+import WeekPieChart from "../../components/Charts/WeekPieChart";
 import axios from 'axios';
-import './hourpage.css';
+import './weekpage.css';
 
-const HourPage = () => {
+
+const WeekPage = () => {
     const [powerData, setPowerData] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [date, setDate] = useState([]);
+    const [loading, setLoading] = useState(true); 
     const [total, setTotal] = useState(0);
 
     const getData = () => {
-        axios.get("/HourPage")
+        axios.get("/WeekPage")
             .then(res => {
                 console.log(res);
                 let tempData = [];
+                let tempDate = [];
                 for (const dataObject of res.data) {
-                    tempData.push(parseFloat(dataObject.power));
+                    tempData.push(parseFloat(dataObject.total_power));
+                    tempDate.push(dataObject.date);
                 }
                 setPowerData(tempData);
+                setDate(tempDate);
                 let sum;
                 sum = tempData.reduce(function (a, b) {
                     return a + b;
@@ -35,11 +40,11 @@ const HourPage = () => {
 
 
     return (
-        <div className="lineContainer">
-            {!loading && <LineChart powerData={powerData} />}
-            <h2 className="wattageTotal">Total watts for hour: {total}</h2>
+        <div className="PieContainer">
+          {!loading && <WeekPieChart powerData={powerData} dates={date} />}
+            <h2 className="wattageTotal">Total watts for week: {total}</h2>
         </div>
     );
 }
 
-export default HourPage;
+export default WeekPage;

@@ -1,12 +1,11 @@
 .home {
-    width: 100%;
+    width: 99%;
     background-color: white;
     text-align: center;
-    background-color: #141515;
 }
 .home, h1 {
     position: relative;
     top: 75px;
-    color: white;
+    color: black;
     font-size: 50px;
 }

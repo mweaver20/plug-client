@@ -38,7 +38,7 @@ function LineChart(props) {
         display: true,
         text: 'Watts per minute',
       },
-    },
+    }
   };
   
 
@@ -48,7 +48,7 @@ function LineChart(props) {
       {
         label: 'Watts',
         data: chartData,
-        borderColor: 'rgb(255, 255, 255)',
+        borderColor: 'rgb(0, 0, 0)',
         backgroundColor: 'rgba(255, 99, 132, 1)',
       }
     ],
@@ -56,7 +56,7 @@ function LineChart(props) {
 
   return (
     <Line
-     options={options} data={data}
+     options={options} data={data} 
     />
   );
 }

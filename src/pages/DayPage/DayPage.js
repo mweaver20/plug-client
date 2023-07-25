@@ -1,20 +1,21 @@
 import React, {useEffect, useState} from "react";
-import LineChart from "../../components/Charts/LineChart";
+import DayBarChart from "../../components/Charts/DayBarChart";
 import axios from 'axios';
-import './hourpage.css';
+import './daypage.css';
 
-const HourPage = () => {
+
+const DayPage = () => {
     const [powerData, setPowerData] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true); 
     const [total, setTotal] = useState(0);
 
     const getData = () => {
-        axios.get("/HourPage")
+        axios.get("/DayPage")
             .then(res => {
                 console.log(res);
                 let tempData = [];
                 for (const dataObject of res.data) {
-                    tempData.push(parseFloat(dataObject.power));
+                    tempData.push(parseFloat(dataObject.total_power));
                 }
                 setPowerData(tempData);
                 let sum;
@@ -35,11 +36,11 @@ const HourPage = () => {
 
 
     return (
-        <div className="lineContainer">
-            {!loading && <LineChart powerData={powerData} />}
-            <h2 className="wattageTotal">Total watts for hour: {total}</h2>
+        <div className="BarContainer">
+          {!loading && <DayBarChart powerData={powerData} />}
+            <h2 className="wattageTotal">Total watts for day: {total}</h2>
         </div>
     );
 }
 
-export default HourPage;
+export default DayPage;

@@ -10,13 +10,13 @@ const Nav = () => {
                     <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/HourPage">HourPage</NavLink>
+                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/HourPage">Hourly</NavLink>
                 </li>
                 <li>
-                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/page3">page3</NavLink>
+                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/DayPage">Daily</NavLink>
                 </li>
                 <li>
-                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/page4">page4</NavLink>
+                    <NavLink className={ ({ isActive }) => isActive? 'activeNavLink' : 'inactiveNavLink'} to="/WeekPage">Weekly</NavLink>
                 </li>
             </ul>
         </nav>
