@@ -50,9 +50,9 @@ const WeekPage = () => {
     return (
         <div className="weekContainer">
             <div className="weekHeader">
-            <h1>Weekly data</h1>
+            <h1 className="weekOpener">Weekly data</h1>
             <br></br>
-            <p>Here you can select a start date and see the total power used for each day of that week. Please note that data collection started on July 10th and ended on July 24th so dates before or after this might return no data</p>
+            <p className="weekP">Here you can select a start date and see the total power used for each day of that week. Please note that data collection started on July 10th and ended on July 24th so dates before or after this might return no data</p>
             </div>
             
             <div className="PieContainer">

@@ -13,7 +13,7 @@ const HourPage = () => {
     const [times, setTimes] = useState([]);
 
     const defaultDate = dayjs().hour(12).minute(0).second(0);
-    const startDateDayjs = dayjs('2023-07-15');
+    const startDateDayjs = dayjs('2023-07-14');
 
     const [startTime, setStartTime] = useState(defaultDate);
     const [startDate, setStartDate] = useState(startDateDayjs);
@@ -63,13 +63,13 @@ const HourPage = () => {
     return (
         <div className="hourContainer">
             <div>
-                <h1>Hourly Data</h1>
+                <h1 className="hourOpener" >Hourly Data</h1>
                 <br></br>
-                <p>Here you can select a start date and time to see the power readings for each minute of the selected hour. Please note that data collection started on July 10th and ended on July 24th so dates before or after this might return no data</p>
+                <p className="hourP" >Here you can select a start date and time to see the power readings for each minute of the selected hour. Please note that data collection started on July 10th and ended on July 24th so dates before or after this might return no data</p>
             </div>
             <div className="lineContainer">
                 {!loading && <LineChart powerData={powerData} labels={times} />}
-                <h2 className="wattageTotal">Total watts for hour: {total}</h2>
+                <h2 className="wattageTotal">Total watts for hour: {total.toFixed(2)}</h2>
                 <DateTimePicker
                     startDate={startDate}
                     onStartDateChange={handleStartDateChange}

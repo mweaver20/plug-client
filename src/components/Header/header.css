@@ -3,7 +3,6 @@
 .header {
     display: flex;
     justify-content: space-between;
-    width: 99%vw;
     height: fit-content;
     background-color: #37393A;
     margin: 10px 20px 0px 10px;
@@ -11,16 +10,20 @@
     
 }
 
-.hp-left{
+.left{
     color: white;
     font-family: 'roboto';
     padding: 0 10px 0 70px;
     text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
 }
 
 
-.hp-right{
+.right{
     color: white;
-    padding: 0 50px;
-    font-family: 'roboto';
+    padding: 0 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
+    
 }

@@ -4,7 +4,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
-import './App.css';
 
 import Root from "./components/Root/Root";
 import Home from "./pages/Home/Home";

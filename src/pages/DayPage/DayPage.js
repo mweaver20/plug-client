@@ -47,13 +47,13 @@ const DayPage = () => {
     }
 
     return (
-        <div>
+        <div className="dayContiner">
             <div className="dayHeader">
-                <h1>Day data</h1>
+                <h1 className="dayOpener">Day data</h1>
                 <br></br>
-                <p>Here you can select a date to see the total power recorded for each hour of that day. Please note that data collection started on July 10th and ended on July 24th so dates before or after this might not return any data</p>
+                <p className="dayP">Here you can select a date to see the total power recorded for each hour of that day. Please note that data collection started on July 10th and ended on July 24th so dates before or after this might not return any data</p>
             </div>
-            <div className="BarContainer">
+            <div className="barContainer">
                 {!loading && <DayBarChart powerData={powerData} label={hours}/>}
                 <h2 className="wattageTotal">Total kW recorded for day: {(total / 1000).toFixed(2)}</h2>
                 <Datepicker startDate={startDate} onStartDateChange={handelStartDateChange} />

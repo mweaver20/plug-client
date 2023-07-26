@@ -11,14 +11,14 @@
 }
 
 
-h1 {
+.weekOpener {
   position: relative;
   top: 25px;
   left: 35px;
   padding: none;
 }
 
-p{
+.weekP{
   position: relative;
   left: 35px;
   width: 70%;

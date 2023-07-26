@@ -1,9 +1,29 @@
-.lineContainer{
-  margin: 30px 10px 0 30px;
-  width: 80%;
-  height: auto
+.hourContainer{
+  width: 85%;
 }
 
+.lineContainer{
+  position: relative;
+  top: 40px;
+  left: 35px;
+  width: 90%;
+  max-width: 700px;
+}
+
+
+.hourOpener {
+  position: relative;
+  top: 25px;
+  left: 35px;
+  padding: none;
+}
+
+.hourP{
+  position: relative;
+  left: 35px;
+  width: 70%;
+  font-family: 'Roboto';
+}
 .wattageTotal {
   color: black;
 }

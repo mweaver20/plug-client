@@ -11,8 +11,8 @@ import './header.css';
 const Header = () => {
     return (
         <div className='header'>
-            <p className='hp-left'>Morgan Weaver</p>
-            <p className='hp-right'>CEN-4930C</p>
+            <p className='left'>Morgan Weaver</p>
+            <p className='right'>CEN-4930C</p>
         </div>
 
     );
