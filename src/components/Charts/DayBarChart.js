@@ -14,6 +14,7 @@ import { Bar } from 'react-chartjs-2';
 function DayBarChart(props) {
 
   let chartData = props.powerData;
+  let labels = props.label;
 
   ChartJS.register(
     CategoryScale,
@@ -37,13 +38,13 @@ function DayBarChart(props) {
     },
   };
 
-  const labels = Array.from({ length: 24 }, (_, i) => i + 1);
+  //const labels = Array.from({ length: 23 }, (_, i) => i + 1);
 
   const data = {
     labels: labels,
     datasets: [
       {
-        label: 'Total watts per hour',
+        label: 'total watts recorded per hour',
         data: chartData,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       }

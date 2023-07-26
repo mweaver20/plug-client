@@ -12,7 +12,7 @@ function WeekPieChart (props) {
     labels: dates,
     datasets: [
       {
-        label: 'total daily power',
+        label: 'Total watts for day',
         data: powerData,
         backgroundColor: [
           'rgba(255, 99, 132, 0.3)',
@@ -30,6 +30,7 @@ function WeekPieChart (props) {
           'rgba(75, 192, 192, 1)',
           'rgba(153, 102, 255, 1)',
           'rgba(255, 159, 64, 1)',
+          'rgba(255, 102, 209, 1)'
         ],
         borderWidth: 1,
       },

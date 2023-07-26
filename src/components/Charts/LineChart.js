@@ -25,7 +25,7 @@ function LineChart(props) {
     Legend
   );
 
-  const labels = Array.from({ length: 60 }, (_, i) => i + 1);
+  const labels = props.labels;
   const chartData = props.powerData;
 
   const options = {

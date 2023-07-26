@@ -1,6 +1,8 @@
 import React from "react";
 
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 import './App.css';
 
@@ -22,10 +24,9 @@ const router = createBrowserRouter( createRoutesFromElements(
 
 function App() {
   return (
-    <>
-      { /* Replace below and add Router Provider*/}
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
       <RouterProvider router={router}/>
-    </>
+    </LocalizationProvider>
   );
 }
 

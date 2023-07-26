@@ -1,6 +1,26 @@
-.PieContainer{
-  margin: 30px 10px 0 30px;
-  width: 50%;
-  height: auto;
+.weekContainer{
+  width: 85%;
+}
 
+.PieContainer{
+  position: relative;
+  top: 40px;
+  left: 35px;
+  width: 60%;
+  max-width: 600px;
+}
+
+
+h1 {
+  position: relative;
+  top: 25px;
+  left: 35px;
+  padding: none;
+}
+
+p{
+  position: relative;
+  left: 35px;
+  width: 70%;
+  font-family: 'Roboto';
 }

@@ -5,7 +5,7 @@ import './home.css';
 const Home = () => {
     return(
        <main className='home'>
-        <h1>Hello all</h1>
+        <h1>Hello world.</h1>
        </main>
     );
 };
