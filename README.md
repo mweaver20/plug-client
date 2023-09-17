@@ -1,3 +1,13 @@
+
+![Screenshot 2023-09-16 at 5 20 13 PM](https://github.com/mweaver20/plug-client/assets/83778978/63cfe3f6-5770-49c5-8bcb-f7a4b7ce38f1)
+
+![Screenshot 2023-09-16 at 5 20 20 PM](https://github.com/mweaver20/plug-client/assets/83778978/74c69c56-63e8-4854-bc1c-36cd78ac610e)
+
+
+![Screenshot 2023-09-16 at 5 20 27 PM](https://github.com/mweaver20/plug-client/assets/83778978/ed17994a-b69c-43d1-a4a1-b76a2669aaa0)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
